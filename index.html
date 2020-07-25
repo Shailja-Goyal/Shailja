@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="boot.css">
+  <link rel="stylesheet" href="css/all.css">
+  <title>Document</title>
+</head>
+<style>
+  html,body{
+    margin: 0px;
+    padding: 0px;
+    font-family: jose;
+  }
+  *{
+    box-sizing: border-box
+  }
+  body::-webkit-scrollbar{
+    width:4px
+  }
+  body::-webkit-scrollbar-thumb{
+    background-color:indigo
+    
+  }
+  @font-face{
+       src: url("L1.ttf");
+       font-family: abcd;
+    }
+    @font-face{
+      src: url("font2.ttf");
+      font-family: jose;
+    }
+    @font-face{
+      src: url("L2.ttf");
+      font-family: l2;
+    }
+    @font-face{
+      src: url("L3.ttf");
+      font-family: l3;
+    }
+    @font-face{
+      src: url("L4.ttf");
+      font-family: l4;
+    }
+    @font-face{
+      src: url("L5.ttf");
+      font-family: l5;
+    }
+  .main1{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('B (2).jpg');
+    position: relative;
+  }
+  .overlay{
+    height:100%;
+    width:100%;
+    background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    position: absolute;
+    top: 0%;
+    opacity: 0.5
+  }
+  .logo{
+    height:15%;
+    width:30%;
+    font-size: 52px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    z-index: 1000;
+    font-family: abcd;
+  }
+  .navv{
+    width:90%;
+    height: 10%;
+    z-index: 100;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .card1{
+    border: none;
+    z-index: 1000;
+  }
+  .bton{
+    border-radius: 50px;
+    background-color: rgb(77,198,176);
+    border: none;
+    color: white
+  }
+  .bton2{
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(199, 199, 205);
+  }
+  .bton:hover{
+    background-color: rgb(67, 233, 202);
+  }
+  .bton2:hover{
+    background-color: rgb(179, 179, 184);
+  }
+  .head{
+    font-size: 50px
+  }
+  .main2,.main4,.main6,.main9{
+    background-color: rgb(232,232,236)
+  }
+  .icon{
+    color: rgb(77,198,176);
+  }
+  .main8{
+    background-color: rgb(77,198,176);
+    color: white
+  }
+  p{
+    font-size: 18px;
+  }
+  .nav-item>a:hover{
+    text-decoration: underline;
+  }
+  
+</style>
+<body>
+  <div class="main1">
+    <div class="overlay"></div>
+    <div class="logo mt-5">ELENA</div>
+      <div class="navv">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
+                <ul class="navbar-nav">
+                  <li class="nav-item active px-2">
+                    <a class="nav-link" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item active px-2">
+                    <a class="nav-link" href="#">SERVICES</a>
+                  </li>
+                  <li class="nav-item active px-2">
+                    <a class="nav-link" href="#">FEATURES</a>
+                  </li>
+                  <li class="nav-item active px-2">
+                      <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+              </div>
+            </nav>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="card mt-4 text-center w-75 bg-transparent card1">
+                <div class="card-body text-white">
+                  <h1 class="card-title mt-3 head" >HAVE A GOOD DAY</h1>
+                  <h5 class="card-text pt-2">With supporting text below content.</h5>
+                  <button type="button" class="btn text-white mt-5 bton">GET YOUR COPY NOW</button>
+                </div>
+              </div>
+        </div>
+      </div>
+  </div>
+  <div class="main2">
+    <div class="container">
+      <div class="row">
+              <div class="card bg-transparent card1 text-center col-lg-4 col-md-12 col-sm-12">
+              
+                <div class="card-body py-5">
+                  <h1 class="card-title icon"><i class="fas fa-user-friends"></i></h1>
+                  <h5 class="card-text mt-4">PROFESSIONALS</h5>
+                  <hr size="3" width="65%">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam!</p>
+                </div>
+              </div>
+              <div class="card bg-transparent card1 text-center col-lg-4 col-md-12 col-sm-12">
+              
+                <div class="card-body py-5">
+                  <h1 class="card-title icon"><i class="far fa-heart"></i></h1>
+                  <h5 class="card-text mt-4">AMATEURS</h5>
+                  <hr size="3" width="60%">
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, illum.</p>
+                </div>
+              </div>
+              <div class="card bg-transparent card1 text-center col-lg-4 col-md-12 col-sm-12">
+                
+                <div class="card-body py-5">
+                  <h1 class="card-text icon"><i class="fas fa-headphones-alt"></i></h1>
+                  <h5 class="card-text mt-4">FOR EVERYONE</h5>
+                  <hr size="3" width="70%">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+          
+      </div>
+    </div>
+  </div>
+  <div class="main3">
+    <div class="container">
+      <div class="row justify-content-center py-2">
+  
+          <div class="card mx-2 px-5 my-5 card1 col-lg-5 col-md-10 col-sm-12">
+            <img src="8.jpg" class="card-img-top img-fluid" style="height:50%">
+            <div class="card-body">
+              <h4 class="card-title">RESPONSIVE EMAIL TEMPLATE</h4>
+              <hr size="3" width="90%">
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <button type="button" class="btn text-white mt-3 bton border-light">Read More</button>
+            </div>
+          </div>
+          
+          <div class="card mx-2 px-5 my-5 card1 col-lg-5 col-md-10 col-sm-12">
+            <img src="3.jpg" class="card-img-top img-fluid" style="height:50%">
+            <div class="card-body">
+              <h4 class="card-title">FULLY COMPATIBLE TEMPLATE</h4>
+              <hr size="3" width="90%">
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content as shown.</p>
+              <button type="button" class="btn text-white mt-3 bton border-light" >Read More</button>
+            </div>
+          </div>
+         
+      </div>
+    </div>
+  </div>
+  <div class="main4">
+    <div class="container">
+      <div class="row">
+          <div class="card bg-transparent w-100 mx-5 px-5 py-5 card1">
+              <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-adjust"></i> FULLY SUPPORTED TEMPLATE</h3>
+                <hr width="60%" align="left">
+                <p class="card-text mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, earum nulla. Molestiae nam quibusdam harum. Ut error eius culpa quam accusantium nulla corporis odio? Officiis expedita fugit repellat ducimus fuga dolorum labori</p>
+                <a href="#" class="btn mb-4 mt-3 bton2">Read More</a>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+  <div class="main5">
+    <div class="container">
+      <div class="row justify-content-center py-3">
+          
+              <div class="card col-lg-4 col-md-10 col-sm-12 px-4 py-5 card1">
+                <img src="a.jpg" class="card-img-top" alt="...">
+                <div class="card-body pt-5">
+                  <h4 class="card-title">FULLY LAYERED PSD</h4>
+                  <hr width="90%" align="left">
+                  <p class="card-text">This is a longer card with supporting text below as a lead-in to additional content.</p>
+                  <a href="#">Check this out</a>
+                </div>
+              </div>
+              <div class="card col-lg-4 col-md-10 col-sm-12 px-4 py-5 card1">
+                <img src="b.jpg" class="card-img-top" alt="...">
+                <div class="card-body pt-5">
+                  <h4 class="card-title">FULL COMPATIBILITY</h4>
+                  <hr width="90%" align="left">
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#">Check this out</a>
+                </div>
+              </div>
+              <div class="card col-lg-4 col-md-10 col-sm-12 px-4 py-5 card1">
+                <img src="c.jpg" class="card-img-top" alt="...">
+                <div class="card-body pt-5">
+                  <h4 class="card-title">VERY GREAT MODULES</h4>
+                  <hr width="90%" align="left">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to content.</p>
+                  <a href="#">Check this out</a>
+                </div>
+              </div>
+            
+      </div>
+    </div>
+  </div>
+  <div class="main6">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="card bg-transparent px-5 py-5 col-lg-6 col-md-10 col-sm-12 card1">
+          <div class="card-body">
+            <h3 class="card-title"><i class="fas fa-paper-plane"></i> SEND IT NOW</h3>
+            <hr width="60%" align="left">
+            <p class="card-text mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, earum nulla. Molestiae nam quibusdam harum.</p>
+            <a href="#" class="btn mb-4 mt-3 bton">Read More</a>
+          </div>
+        </div>
+        <div class="card bg-transparent px-5 py-5 col-lg-6 col-md-10 col-sm-12 card1">
+          <div class="card-body">
+            <h3 class="card-title"><i class="fas fa-pencil-alt"></i> VERY NICE TO SEE</h3>
+            <hr width="70%" align="left">
+            <p class="card-text mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, earum nulla. Molestiae nam quibusdam harum.</p>
+            <a href="#" class="btn mb-4 mt-3 bton">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main7">
+    <div class="container">
+      <div class="row py-4 px-3">
+        <div class="card my-5 card1 col-md-12 col-lg-12 col-sm-12 bg-transparent" >
+          <div class="row no-gutters">
+            <div class="col-md-4 px-1">
+              <img src="1.jpg" class="card-img img-fluid ">
+            </div>
+            <div class="col-md-8 px-3">
+              <div class="card-body">
+                <h2 class="card-title">JUST FOR YOU ON THEME FOREST</h2>
+                <hr width="80%" align="left">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id commodi architecto sit. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="#" class="btn mb-4 mt-3 bton2">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+  <div class="main8">
+    <div class="container">
+      <div class="row py-2 pt-5 justify-content-center">
+        <div class="card bg-transparent card1">
+          <div class="card-body text-center">
+           <h3> <i class="far fa-star"></i> THIS TEMPLATE WAS FEATURED ON</h3>
+           <hr width="100%"> 
+          </div>
+        </div>
+      </div>
+      <div class="row py-2 pb-5">
+        <div class="card bg-transparent col-lg-3 col-md-6 col-sm-12 card1">
+          <div class="card-body text-center" style="font-family:l5">
+            <h1>TechCrunch</h1>
+          </div>
+        </div>
+        <div class="card bg-transparent col-lg-3 col-md-6 col-sm-12 card1">
+          <div class="card-body text-center" style="font-family:l3">
+            <h1>Promail</h1>
+          </div>
+        </div>
+        <div class="card bg-transparent col-lg-3 col-md-6 col-sm-12 card1">
+          <div class="card-body text-center" style="font-family:l4">
+            <h1>Mashable</h1>
+          </div>
+        </div>
+        <div class="card bg-transparent col-lg-3 col-md-6 col-sm-12 card1">
+          <div class="card-body text-center" style="font-family:l2">
+            <h1>atlaspix</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main9">
+    <div class="container">
+      <div class="row pt-2">
+        <div class="card bg-transparent col-lg-7 col-md-12 col-sm-12 card1 py-0 my-0">
+          <div class="card-body text-center py-0 my-1">
+            <h4>Elenea <i class="far fa-copyright"></i> copyright 2013 - Unsubscribe Here</h4>
+          </div>
+        </div>
+        <div class="card bg-transparent col-lg-4 col-md-12 col-sm-12 card1 py-0 my-0">
+          <div class="card-body text-center px-4 py-0 my-1">
+            <h3><i class="fab fa-google-plus-g"></i>&nbsp;<i class="fab fa-facebook-f"></i >&nbsp;<i class="fab fa-twitter"></i></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="jquery.js"></script>
+  <script src="boot.js"></script>
+</body>
+</html>
